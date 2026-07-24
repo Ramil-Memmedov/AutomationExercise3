@@ -6,12 +6,12 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.LoginPage;
+import pages.LoginPage1;
 
-public class LoginTest {
+public class LoginTest1 {
 
     public static WebDriver driver;
-    public static LoginPage loginPage;
+    public static LoginPage1 loginPage;
 
     @Given("I launch the browser")
     public void iLaunchTheBrowser() {
@@ -19,7 +19,7 @@ public class LoginTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage1(driver);
     }
 
     @Given("I navigate to the Automation Exercise website")
