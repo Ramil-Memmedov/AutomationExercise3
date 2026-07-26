@@ -1,11 +1,14 @@
+@register
 Feature: Register User Functionality
+
   Scenario: Register User with complete details and delete account
+
     Given I launch the browser
     And I navigate to the Automation Exercise website
     And I verify that the home page is visible
     When I click on Signup Login button
     Then I should see New User Signup!
-    When I enter valid name and email address
+    When I enter name and email address
     And I click on Signup button
     Then I should see ENTER ACCOUNT INFORMATION
     When I fill details Title, Name, Password, Date of birth
