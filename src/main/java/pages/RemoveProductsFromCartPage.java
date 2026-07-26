@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RemoveProductsFromCartPage extends BasePage{
 
@@ -31,7 +32,8 @@ public class RemoveProductsFromCartPage extends BasePage{
         clickElementWithJS(deleteButton);
     }
     public boolean isCartEmpty() {
-        return driver.findElement(emptyCartMessage).isDisplayed();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(emptyCartMessage))
+                .isDisplayed();
     }
 }
 
