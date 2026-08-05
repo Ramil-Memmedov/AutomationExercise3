@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class RemoveProductsFromCartPage extends BasePage{
+public class RemoveProductsFromCartPage1 extends BasePage{
 
-    public RemoveProductsFromCartPage(WebDriver driver) {
+    public RemoveProductsFromCartPage1(WebDriver driver) {
         super(driver);
     }
     private By productsButton=By.xpath("//a[contains(text(),'Products')]");

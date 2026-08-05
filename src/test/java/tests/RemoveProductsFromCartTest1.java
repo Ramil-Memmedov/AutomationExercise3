@@ -4,16 +4,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.RemoveProductsFromCartPage;
+import pages.RemoveProductsFromCartPage1;
 
-public class RemoveProductsFromCartTest {
-    private RemoveProductsFromCartPage removeProductsFromCartPage;
+public class RemoveProductsFromCartTest1 {
+    private RemoveProductsFromCartPage1 removeProductsFromCartPage1;
 
-    private RemoveProductsFromCartPage cartPage() {
-        if (removeProductsFromCartPage == null) {
-            removeProductsFromCartPage = new RemoveProductsFromCartPage(LoginTest.driver);
+    private RemoveProductsFromCartPage1 cartPage() {
+        if (removeProductsFromCartPage1 == null) {
+            removeProductsFromCartPage1 = new RemoveProductsFromCartPage1(LoginTest.driver);
         }
-        return removeProductsFromCartPage;
+        return removeProductsFromCartPage1;
     }
 
     @When("I add product to cart")

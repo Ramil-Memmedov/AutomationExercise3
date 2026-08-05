@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegisterPage extends BasePage {
+public class RegisterPage1 extends BasePage {
 
     private By signupTitle = By.xpath("//div[@class='signup-form']/h2");
     private By nameInput = By.xpath("//input[@data-qa='signup-name']");
@@ -38,7 +38,7 @@ public class RegisterPage extends BasePage {
     private By continueButton = By.xpath("//a[@data-qa='continue-button']");
     private By accountDeletedTitle = By.xpath("//b[contains(text(),'Account Deleted!') or contains(text(),'ACCOUNT DELETED!') or @data-qa='account-deleted']");
 
-    public RegisterPage(WebDriver driver) {
+    public RegisterPage1(WebDriver driver) {
         super(driver);
     }
 
