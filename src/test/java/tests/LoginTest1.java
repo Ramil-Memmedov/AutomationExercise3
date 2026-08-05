@@ -3,6 +3,7 @@ package tests;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.After;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +21,15 @@ public class LoginTest1 {
         driver.manage().window().maximize();
 
         loginPage = new LoginPage1(driver);
+    }
+
+    @After
+    public void closeBrowser() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+            loginPage = null;
+        }
     }
 
     @Given("I navigate to the Automation Exercise website")
