@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegisterPage1 extends BasePage {
+public class RegisterPage1 extends BasePage1 {
 
     private By signupTitle = By.xpath("//div[@class='signup-form']/h2");
     private By nameInput = By.xpath("//input[@data-qa='signup-name']");

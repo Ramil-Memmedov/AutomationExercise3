@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class RemoveProductsFromCartPage1 extends BasePage{
+public class RemoveProductsFromCartPage1 extends BasePage1{
 
     public RemoveProductsFromCartPage1(WebDriver driver) {
         super(driver);

@@ -11,7 +11,7 @@ public class RemoveProductsFromCartTest1 {
 
     private RemoveProductsFromCartPage1 cartPage() {
         if (removeProductsFromCartPage1 == null) {
-            removeProductsFromCartPage1 = new RemoveProductsFromCartPage1(LoginTest.driver);
+            removeProductsFromCartPage1 = new RemoveProductsFromCartPage1(LoginTest1.driver);
         }
         return removeProductsFromCartPage1;
     }
