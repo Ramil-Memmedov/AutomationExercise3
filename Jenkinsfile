@@ -1,13 +1,11 @@
 pipeline {
     agent any
 
-    stages {
+    tools {
+        maven 'M3'
+    }
 
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
+    stages {
 
         stage('Build') {
             steps {
@@ -24,7 +22,8 @@ pipeline {
 
     post {
         always {
-            junit 'target/surefire-reports/*.xml'
+            junit allowEmptyResults: true,
+                    testResults: 'target/surefire-reports/*.xml'
         }
     }
 }
