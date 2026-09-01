@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends BasePage {
+public class LoginPage1 extends BasePage1 {
 
     private By signupLoginButton =
             By.xpath("//a[contains(text(),'Signup / Login')]");
@@ -31,7 +31,7 @@ public class LoginPage extends BasePage {
             By.xpath("//p[text()='Your email or password is incorrect!']");
     private By logoutButton =
             By.xpath("//a[contains(text(),'Logout')]");
-    public LoginPage(WebDriver driver) {
+    public LoginPage1(WebDriver driver) {
         super(driver);
     }
 
